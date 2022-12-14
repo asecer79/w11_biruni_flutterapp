@@ -32,6 +32,8 @@ class DbContext {
   }
 
   static Future<List<Department>> getDepartments() async {
+    //sleep(Duration(seconds: 10));
+
     var db = await _initialize();
 
     var records = await db.query("departments");
