@@ -1,7 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:w11_biruni_flutterapp/dbcontext.dart';
+import 'package:w11_biruni_flutterapp/department.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // var db = await DbContext.initialize();
+
+  // print(db.isOpen);
+
+  // await DbContext.insertDepartment(Department(departmentname: "Software eng."));
+
+ // print((await DbContext.getDepartments()).length);
+
+  //print((await DbContext.getDepartment(2)).departmentname);
+
+//   print((await DbContext.getDepartments()).length);
+// await DbContext.deleteDepartment(2);
+//    print((await DbContext.getDepartments()).length);
+
+
   runApp(const MyApp());
 }
 
